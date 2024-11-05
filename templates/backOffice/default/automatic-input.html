@@ -1,0 +1,17 @@
+{form name="thelia.admin.coupon.creation"}
+  {form_field field='automatic'}
+    <div class="form-group {if $error}has-error{/if}" id="form-automatic-input">
+      <label for="automatic" class="checkbox control-label">
+        <input id="automatic" type="checkbox" name="{$name}" {if $data}checked{/if} />
+        {if $error}{$message}{/if}
+        {intl l="Automatic coupon" d="automaticdiscount"}
+      </label>
+    </div>
+  {/form_field}
+{/form}
+
+<script>
+$(function($){
+    $('#form-automatic-input').insertBefore($('#is-enabled').parents('.form-group'));
+});
+</script>
