@@ -2,6 +2,7 @@
   "name": "thelia/automatic-discount-module",
   "license": "LGPL-3.0+",
   "type": "thelia-module",
+  "abandoned": "thelia/query-builder-module",
   "require": {
     "thelia/installer": "~1.1"
   },
